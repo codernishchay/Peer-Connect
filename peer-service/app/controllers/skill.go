@@ -46,7 +46,6 @@ func UpdatePeerSkill(c *gin.Context) {
 		update := bson.M{"$push": bson.M{"peers": user}}
 		err := config.SKILLDB.FindOneAndUpdate(ctx, filter, update).Decode(&skl)
 		if err != nil {
-
 			fmt.Println("here ? 1")
 			fmt.Println(skl, "here is skl ")
 			log.Fatal(err)
