@@ -53,11 +53,14 @@ export default function UserLogin() {
                     <input type="password" className="form-control" id="inputPassword" placeholder="Password" value={password} onChange={e=>setPassword(e.target.value)} />
                 </div>
             </div>
-            <div className = "container mt-3 text-center">
+            <div className = "container mt-3 text-center ">
                 <button type="button" className="btn btn-outline-primary text-center" onClick={login} >Login</button>
             </div>
+           
             <p className="forgot-password text-right">
+          
             Forgot <a href="/forgotpassword">Password?</a>
+           
         </p>
         </form>
         </div>

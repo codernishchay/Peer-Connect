@@ -1,0 +1,97 @@
+
+
+  .panel{
+
+
+    max-height: auto;
+    background: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  } 
+  
+  #inside-panel{
+    display: flex;
+    height: 100%;
+    width: 70%;
+    margin: 'auto';
+    background: linear-gradient(45deg, #F15156, #FFCF99);
+    padding: .5rem;
+    border: none;
+    margin: .5rem;
+  }
+  
+
+  
+  h1{
+    margin: 0 ; 
+
+    height: auto;
+    line-height: 2em;
+    font-family: 'Great Vibes', cursive;
+    padding-top: 1rem;
+  }
+  
+  hr{
+    margin: auto;
+    height: auto;
+    width: 60%;
+  }
+  
+  h2{
+    margin: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  ul{
+    list-style: none;
+    margin: 0rem;
+    height: auto;
+    padding: 0rem;
+    padding-bottom: 2rem;
+    text-align: left;
+    padding-left: 13rem;
+    margin-right: 1rem;
+    letter-spacing: 1px;
+    line-height: 2.5rem;
+    margin-top: 1rem;
+  }
+  
+  #title{
+    padding-left: 4.5rem;
+  }
+  
+  #age{
+    padding-left: 5rem;
+  }
+  
+  #hometown{
+    padding-left: 1.5rem;
+  }
+  
+  #website{
+    padding-left: 3rem;
+  }
+  
+  img{
+    margin: 0;
+    margin-top: 2rem;
+    height: 250px;
+    box-shadow: 12px 12px 5px 1px #726E60;
+  }
+  
+  @media (max-width: 780px){
+    .panel{
+      width: 65%;
+    }
+    
+    ul{
+      flex-shrink: 1;
+      padding-left: 6rem;
+      font-size: .85rem;
+    }
+  }

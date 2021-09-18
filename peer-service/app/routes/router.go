@@ -9,8 +9,8 @@ import (
 func Router() {
 	r := gin.Default()
 	r.POST("/register", controllers.CreatePeer)
-	r.POST("/createSkill", controllers.CreateSkill)
+	// r.POST("/skill", controllers.CreateSkill)
 	r.GET("/search", controllers.FindPeer)
-	r.POST("/update", controllers.UpdatePeerSkill)
+	// r.POST("/update", controllers.UpdatePeerSkill)
 	r.Run()
 }
