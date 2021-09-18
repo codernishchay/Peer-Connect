@@ -11,6 +11,7 @@ import (
 
 	"github.com/gin-gonic/gin"
 
+	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/bson/primitive"
 )
 
@@ -38,5 +39,11 @@ func CreatePeer(c *gin.Context) {
 
 // we want to give users flexibility to search peers on basis of
 func FindPeer(c *gin.Context) {
-
+	skill := c.Query("skill")
+	fmt.Println(skill)
+	cursor, err := config.DATABASE.Collection(skill).Find(context.Background(), bson.M{})
+	if err != nil {
+		log.Fatal(err)
+	}
+	json.NewEncoder(c.Writer).Encode(cursor)
 }
