@@ -8,7 +8,7 @@ import IconButton from '@material-ui/core/IconButton';
 import { Container } from '@material-ui/core';
 import SearchIcon from '@material-ui/icons/Search';
 import {useState, useRef, useEffect} from 'react'
-import ProfileCard from './profileCard';
+import ProfileCard from "../components/profileCard"
 
 
 const useStyles = makeStyles((theme) => ({

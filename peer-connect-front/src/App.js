@@ -1,16 +1,23 @@
 
 import React from 'react';
-import BigProfile from './components/bigProfile';
-import ProfileCard from './components/profileCard';
-import Search from './components/search';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import UserSignup from './pages/signup';
+import UserLogin from './pages/login';
+import HomePage from './pages/home';
+import Search from './pages/search';
 function App() {
 
   return (   
     <div>
-      {/* <Search></Search>
-      <ProfileCard></ProfileCard> */}
-      {/* <UserSignup/>  */}
-      <BigProfile/>
+     <BrowserRouter>
+     <Switch>
+       <Route exact path='/'  component={HomePage} />
+       <Route path='/signup' component={UserSignup} />
+       <Route path='/login' component={UserLogin} /> 
+       <Route path='/search' component={Search} /> 
+    
+     </Switch>
+     </BrowserRouter>
     </div>
   ) 
 }
